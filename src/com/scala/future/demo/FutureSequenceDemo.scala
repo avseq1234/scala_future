@@ -44,7 +44,8 @@ object FutureSequenceDemo {
 
     //
     //
-    // In the reality, we need to send request to different resources and process when they all back together
+    // In the reality, we need to send request to different resources and process
+    // when they all back together
     //
     //
     val f5: Future[(String, String, Int)] =

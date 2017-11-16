@@ -30,8 +30,8 @@ object FutureRecover {
 
     f3.onComplete{
 
-      case Success(e) => println(e)
-      case Failure(e) => println(e.getMessage)
+      case Success(e) => println("Success:" + e)
+      case Failure(e) => println("Failure:" + e.getMessage)
     }
 
     Thread.sleep(1000)
