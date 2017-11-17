@@ -13,6 +13,11 @@ object FutureAddThenDemo {
   def main(args: Array[String]): Unit = {
     val allPost = scala.collection.mutable.Set[String]()
 
+
+    //andThen() returns a copy of the original Future,
+    // it does not change the returned Future in anyway.
+    // it is used to execute side effects only.
+    
     val f = Future {
       val s = getNewPosts()
       println(s)

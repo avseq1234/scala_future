@@ -15,6 +15,7 @@ object Promise {
       val r = produceSomething
       println(r)
       p.success(r)
+
 //      p.failure( new RuntimeException("ttt"))
       continueDoSomething
 
